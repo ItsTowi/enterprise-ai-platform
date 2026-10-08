@@ -21,7 +21,7 @@ def describe_schema(engine: Engine) -> str:
     for table in inspector.get_table_names():
         lines.append(f"Tabla: {table}")
         for column in inspector.get_columns(table):
-            lines.append(f"  - {column['name']} ({column['type']})")
+            lines.append(f"  - {column['name']} ({str(column['type']).split(" COLLATE")[0]})")
 
     lines.append("")
     lines.append("Relaciones:")

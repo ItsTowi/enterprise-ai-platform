@@ -11,6 +11,9 @@ class Settings(BaseSettings):
         env_file_encoding="utf-8",
         extra="ignore",
     )
+    
+    openai_api_key: SecretStr
+    openai_model: str
 
     db_host: str = "127.0.0.1"
     db_port: int = 3306 
