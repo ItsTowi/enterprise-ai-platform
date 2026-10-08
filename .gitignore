@@ -1,3 +1,5 @@
 venv/
 .env
 docs/contracts/*.pdf
+__pycache__/
+*.pyc
