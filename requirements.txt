@@ -8,3 +8,6 @@ fpdf2
 pydantic-settings
 sqlglot
 pytest
+fastapi
+uvicorn
+httpx
